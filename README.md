@@ -37,7 +37,7 @@ medusa -h 172.30.0.101 -U users.txt -P pass.txt -M http \
 -m 'FAIL=Login failed' -t 6
 ```
 
-![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execuca-com-medusa.png)
+![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execucao-com-medusa.png)
 
 --------------------------------------------------------------------------------
 📂 Cenário 2: Força Bruta em FTP e SMB
