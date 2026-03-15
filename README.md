@@ -40,6 +40,7 @@ O comando utilizado simulou as interações que um usuário teria no navegador, 
 --------------------------------------------------------------------------------
 📊 Resultados e Validação
 - Wordlists utilizadas: Listas simples com combinações de usuários e senhas comuns.
+  ![users](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/wordlists/users.txt)
 - Sucesso: Descrição de qual credencial foi capturada (ex: admin/password).
 - Impacto: Se não mitigado, esse ataque pode levar ao comprometimento total do sistema, especialmente se o painelacessado for de administração ou controle de infraestrutura.
 
