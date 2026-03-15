@@ -22,18 +22,18 @@ Antes de iniciar o ataque, foi necessário entender como os dados são enviados 
 - Método de Envio: POST.
 - Parâmetros Identificados: username, password e o botão Login.
 
+![analise-tecnica-do-alvo-01](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/analise-tecnica-do-alvo-01.png)
+
 2. Identificação da String de Erro
 Para que o Medusa saiba que o login falhou, identificamos que a aplicação retorna a frase "Login failed" quando as credenciais são incorretas
 . Se a resposta não contiver essa frase, a ferramenta entende que o acesso foi bem-sucedido.
 
+![analise-tecnica-do-alvo-01](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/analise-tecnica-do-alvo-02.png)
+
 3. Execução com Medusa
 O comando utilizado simulou as interações que um usuário teria no navegador, mas de forma automatizada.
 
-
-
-
-
-
+![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execuca-com-medusa.png)
 
 --------------------------------------------------------------------------------
 📂 Cenário 2: Força Bruta em FTP e SMB
