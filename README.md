@@ -64,6 +64,14 @@ medusa -h 172.30.0.101 -U users.txt -P pass.txt -M http \
 ```
 
 - Sucesso: Descrição de qual credencial foi capturada (ex: admin/password).
+usuário: 
+```
+  admin
+```
+senha:
+```
+  admin
+```
 - Impacto: Se não mitigado, esse ataque pode levar ao comprometimento total do sistema, especialmente se o painelacessado for de administração ou controle de infraestrutura.
 
 🛡️ Medidas de Mitigação
