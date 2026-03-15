@@ -85,5 +85,5 @@ Autenticação de Dois Fatores (2FA): Adicionar uma camada extra de segurança a
 
 📁 Estrutura do Repositório
 - /images: Capturas de tela do Medusa em execução e do acesso ao DVWA.
-- /wordlists: Exemplos de listas de senhas utilizadas (não inclua senhas reais de uso pessoal!).
+- /wordlists: Exemplos de listas de senhas utilizadas.
 - README.md: Documentação principal do projeto.
