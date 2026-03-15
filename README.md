@@ -9,6 +9,7 @@ Este projeto documenta a implementação de um ambiente controlado para simular 
 - Ferramenta Principal: Medusa.
 
 
+![samsung-galaxy-book-recovery-guide](https://github.com/adrianosalves/samsung-galaxy-book-recovery-guide/blob/main/samsung-galaxy-book-recovery-guide.png)
 
 
 🚀 Cenário 1: Ataque em Formulário Web (DVWA)
