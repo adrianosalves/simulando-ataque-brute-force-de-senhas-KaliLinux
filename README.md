@@ -8,9 +8,7 @@ Este projeto documenta a implementação de um ambiente controlado para simular 
 - Rede: VirtualBox com rede interna (host-only).
 - Ferramenta Principal: Medusa.
 
-
-![samsung-galaxy-book-recovery-guide](https://github.com/adrianosalves/samsung-galaxy-book-recovery-guide/blob/main/samsung-galaxy-book-recovery-guide.png)
-
+![configuracao-do-ambiente](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/configuracao-do-ambiente.png)
 
 🚀 Cenário 1: Ataque em Formulário Web (DVWA)
 Nesta etapa, o objetivo foi automatizar tentativas de login em um formulário web típico, simulando o preenchimento em massa com múltiplas combinações.
