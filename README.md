@@ -8,13 +8,16 @@ Este projeto documenta a implementação de um ambiente controlado para simular 
 - Rede: VirtualBox com rede interna (host-only).
 - Ferramenta Principal: Medusa.
 
+
+
+
 🚀 Cenário 1: Ataque em Formulário Web (DVWA)
 Nesta etapa, o objetivo foi automatizar tentativas de login em um formulário web típico, simulando o preenchimento em massa com múltiplas combinações.
 
 1. Análise Técnica do Alvo
 Antes de iniciar o ataque, foi necessário entender como os dados são enviados ao servidor através da barra de desenvolvedor do navegador (F12), especificamente na aba Network.
 
-- URL do Alvo: http://[IP-DO-ALVO]/dvwa/login.php.
+- URL do Alvo: http://172.30.0.101/dvwa/login.php.
 - Método de Envio: POST.
 - Parâmetros Identificados: username, password e o botão Login.
 
@@ -23,8 +26,13 @@ Para que o Medusa saiba que o login falhou, identificamos que a aplicação reto
 . Se a resposta não contiver essa frase, a ferramenta entende que o acesso foi bem-sucedido.
 
 3. Execução com Medusa
-O comando utilizado simulou as interações que um usuário teria no navegador, mas de forma automatizada
-. (Insira aqui o comando específico que você usou no lab, ex: medusa -h [IP] -u admin -P wordlist.txt -M http -m FORM:dvwa/login.php...)
+O comando utilizado simulou as interações que um usuário teria no navegador, mas de forma automatizada.
+
+
+
+
+
+
 
 --------------------------------------------------------------------------------
 📂 Cenário 2: Força Bruta em FTP e SMB
