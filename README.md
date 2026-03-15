@@ -43,11 +43,11 @@ O comando utilizado simulou as interações que um usuário teria no navegador, 
 
 
 [!Usuários](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/wordlists/users.txt)
-'''
+```
   msfadmin
   admin
   root
-'''
+```
 
 - Sucesso: Descrição de qual credencial foi capturada (ex: admin/password).
 - Impacto: Se não mitigado, esse ataque pode levar ao comprometimento total do sistema, especialmente se o painelacessado for de administração ou controle de infraestrutura.
