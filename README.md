@@ -105,6 +105,32 @@ Documentar os testes: wordlists simples, comandos utilizados, validação de ace
 
 --------------------------------------------------------------------------------
 
+Cenário 2.2: Password Spraying em SMB com Enumeração
+Diferente da força bruta comum, o password spraying testa uma única senha comum contra vários usuários para evitar o bloqueio de contas.
+
+1. Enumeração de Usuários: Antes do ataque, é necessário identificar usuários válidos no serviço SMB.
+```
+enum4linux -a 172.30.0.101 | tee enum4_output.txt
+```
+Este comando extrai a lista de usuários do SAMBA da máquina alvo.
+
+2. Wordlists:
+Usuários: Utilize a lista gerada na enumeração (ex: admin, service, guest, user).
+Senha Única: Uma senha fraca comum, como password123.
+
+3. Comando Utilizado (Medusa):
+```
+medusa -h 172.30.0.101 -U users_found.txt -p password123 -M smbnt
+```
+-p: Senha única (minúsculo indica uma única string, não um arquivo).
+-M smbnt: Módulo para o protocolo SMB do Windows/Samba.
+
+4. Validação de Acesso: A validação ocorre quando o Medusa identifica qual conta de usuário aceita a senha "sprayed". O acesso pode ser testado com:
+```
+smbclient -L //172.30.0.101 -U [usuario_encontrado]
+```
+--------------------------------------------------------------------------------
+
 📁 Estrutura do Repositório
 - /images: Capturas de tela do Medusa em execução e do acesso ao DVWA.
 - /wordlists: Exemplos de listas de senhas utilizadas.
