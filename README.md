@@ -125,7 +125,14 @@ medusa -h 172.30.0.101 -U users_found.txt -p password123 -M smbnt
 -p: Senha única (minúsculo indica uma única string, não um arquivo).
 -M smbnt: Módulo para o protocolo SMB do Windows/Samba.
 
-4. Validação de Acesso: A validação ocorre quando o Medusa identifica qual conta de usuário aceita a senha "sprayed". O acesso pode ser testado com:
+4. Validação de Acesso: A validação ocorre quando o Medusa identifica qual conta de usuário aceita a senha "sprayed".
+
+
+
+
+
+
+5. O acesso pode ser testado com:
 ```
 smbclient -L //172.30.0.101 -U [usuario_encontrado]
 ```
