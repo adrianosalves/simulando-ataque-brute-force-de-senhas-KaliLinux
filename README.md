@@ -84,6 +84,8 @@ Autenticação de Dois Fatores (2FA): Adicionar uma camada extra de segurança a
 📂 Cenário 2: Força Bruta em FTP e SMB
 (Aqui você deve documentar os outros dois ataques solicitados pelo desafio: o ataque ao serviço de transferência de arquivos e o password spraying em SMB).
 
+Documentar os testes: wordlists simples, comandos utilizados, validação de acessos e recomendações de mitigação.
+
 --------------------------------------------------------------------------------
 
 📁 Estrutura do Repositório
