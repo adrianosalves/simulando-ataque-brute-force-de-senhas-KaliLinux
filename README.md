@@ -81,9 +81,26 @@ Autenticação de Dois Fatores (2FA): Adicionar uma camada extra de segurança a
 
 --------------------------------------------------------------------------------
 
-📂 Cenário 2: Força Bruta em FTP e SMB
-(Aqui você deve documentar os outros dois ataques solicitados pelo desafio: o ataque ao serviço de transferência de arquivos e o password spraying em SMB).
+📂 Cenário 2.1: Força Bruta em FTP
 
+Este teste visa obter acesso ao serviço de transferência de arquivos da máquina Metasploitable 2.
+1. Wordlists Simples: Para este teste, utilize as listas localizadas na pasta /wordlists do seu repositório:
+
+- Usuários (users.txt): admin, user, msfadmin, root.
+- Senhas (passwords.txt): 123456, password, msfadmin, admin.
+
+2. Comando Utilizado (Medusa): O comando abaixo automatiza a tentativa de login testando todas as combinações das listas contra o alvo:
+```
+medusa -h 172.30.0.101 -U wordlists/users.txt -P wordlists/passwords.txt -M ftp
+```
+- h: IP do alvo (Metasploitable 2).
+- U/-P: Caminhos para as wordlists.
+- M ftp: Módulo específico para o protocolo FTP.
+
+3. Validação de Acesso: O sucesso é confirmado quando o Medusa exibe uma linha em verde (ou com o termo SUCCESS) indicando o par usuário/senha válido (ex: msfadmin / msfadmin). O acesso pode ser validado manualmente via terminal:
+```
+ftp 172.30.0.101
+```
 Documentar os testes: wordlists simples, comandos utilizados, validação de acessos e recomendações de mitigação.
 
 --------------------------------------------------------------------------------
