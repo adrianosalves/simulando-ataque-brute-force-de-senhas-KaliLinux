@@ -40,10 +40,6 @@ medusa -h 172.30.0.101 -U users.txt -P pass.txt -M http \
 ![execucao-com-medusa](https://github.com/adrianosalves/simulando-ataque-brute-force-de-senhas-KaliLinux/blob/main/imagens/execucao-com-medusa.png)
 
 --------------------------------------------------------------------------------
-📂 Cenário 2: Força Bruta em FTP e SMB
-(Aqui você deve documentar os outros dois ataques solicitados pelo desafio: o ataque ao serviço de transferência de arquivos e o password spraying em SMB).
-
---------------------------------------------------------------------------------
 📊 Resultados e Validação
 - Wordlists utilizadas: Listas simples com combinações de usuários e senhas comuns.
 
@@ -82,6 +78,13 @@ Para evitar que ataques reais ocorram, recomenda-se:
 2. Bloqueio de Conta (Account Lockout): Limitar o número de tentativas de login malsucedidas.
 Autenticação de Dois Fatores (2FA): Adicionar uma camada extra de segurança além da senha.
 3. Monitoramento: Analisar logs para identificar padrões de automação de tentativas de login em massa.
+
+--------------------------------------------------------------------------------
+
+📂 Cenário 2: Força Bruta em FTP e SMB
+(Aqui você deve documentar os outros dois ataques solicitados pelo desafio: o ataque ao serviço de transferência de arquivos e o password spraying em SMB).
+
+--------------------------------------------------------------------------------
 
 📁 Estrutura do Repositório
 - /images: Capturas de tela do Medusa em execução e do acesso ao DVWA.
